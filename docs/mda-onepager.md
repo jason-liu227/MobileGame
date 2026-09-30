@@ -20,35 +20,37 @@ Players take on the role of a fearless courier sprinting through a dangerous 2D 
 4. Dodge — move around incoming threats.
 
 ## Dynamics (what emerges when the mechanics meet the player)
-- <e.g. players kite enemies into traps because the arena rewards positioning>
-- <...>
+- Players develop a rhythm of jumping, sliding, and dodging as they learn to anticipate obstacles.
+- Players take greater risks to collect coins or bonuses, balancing reward against the chance of ending their run.
+- As the speed increases, players rely on quick reactions and memorised obstacle patterns to survive longer.
+- Players try to beat their previous distance and score, creating a repeat-and-improve loop.
 
 ## Progression & content
-- **Session length:** <e.g. 3 to 8 minutes per run>
+- **Session length:** Endless runner, depends entirely on player.
 - **Content in the vertical slice (by Week 6):** <e.g. 1 arena, 3 weapons, 3 upgrades>
 - **Content by CA3:** <what is added, if anything>
 
 ## Platform features (Android)
-- **Touch model:** <e.g. one-thumb virtual stick + tap>
-- **Safe areas and orientation:** <portrait / landscape; notch handling>
+- **Touch model:** Tap or Swipe control
+- **Safe areas and orientation:** Landscape
 - **Haptics:** <where and why, or none>
 - **Lifecycle:** pause/resume and focus loss handled from Week 2
 - **Store / testing tracks:** awareness only, no uploads
 
-## Performance budget (your device)
-- **Device:** <model, SoC, RAM, Android version>
-- **Target frame time:** <16.7 ms at 60 fps; High FPS toggle: yes/no>
-- **Memory ceiling:** <e.g. under 600 MB>
-- **Cold start:** <e.g. under 4 s to interactive>
-- **APK size:** <e.g. under 100 MB>
+Device: Samsung Galaxy S25 FE, Exynos 2400, 8 GB RAM, Android 16
+Target frame time: 16.7 ms at 60 fps; High FPS toggle: yes (120 FPS target)
+Memory ceiling: under 600 MB
+Cold start: under 4 s to interactive
+APK size: under 100 MB
 
 ## Monetisation (if any) & ethics notes
-- <Model you would use if you published, and what you will not do (no loot boxes, no timers that pressure spending, etc.)>
+- No monetisation will be used for this modules project work.
+- Explicitly will not use: ads, one-time purchases or cosmetics.
 
 ## Risks & cuts list (in the order they get cut)
-1. <first thing to drop if behind by Week 5>
-2. <...>
-3. <...>
+1. Score multiplier system
+2. Pickup boosts
+3. Extra obstacles
 
 ## Scope lock
 - **Locked on:** Wed 16 Sep 2026
