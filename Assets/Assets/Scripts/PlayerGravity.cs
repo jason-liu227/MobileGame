@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class PlayerGravity : MonoBehaviour
 {
@@ -14,22 +13,8 @@ public class PlayerGravity : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
-    {
-        // Mouse click
-        if (Mouse.current != null && Mouse.current.leftButton.wasPressedThisFrame)
-        {
-            FlipGravity();
-        }
 
-        // Space key
-        if (Keyboard.current != null && Keyboard.current.spaceKey.wasPressedThisFrame)
-        {
-            FlipGravity();
-        }
-    }
-
-    void FlipGravity()
+    public void FlipGravity()
     {
         gravityUp = !gravityUp;
 
@@ -38,7 +23,7 @@ public class PlayerGravity : MonoBehaviour
             ? -gravityStrength
             : gravityStrength;
 
-        // Give the player a push in the new direction
+        // Push the player in the new direction
         rb.linearVelocity = new Vector2(
             rb.linearVelocity.x,
             gravityUp ? flipForce : -flipForce
