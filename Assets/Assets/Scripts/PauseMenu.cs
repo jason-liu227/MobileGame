@@ -17,5 +17,9 @@ public class PauseMenu : MonoBehaviour
         guard.SetPaused(!LifecycleGuard.IsPaused);
     }
 
-    public void OnResumePressed() => guard.SetPaused(false);
+    public void OnResumePressed()
+    {
+        Haptics.Pulse();
+        guard.SetPaused(false);
+    }
 }
