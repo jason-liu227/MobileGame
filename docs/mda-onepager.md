@@ -15,9 +15,8 @@ Players take on the role of a fearless courier sprinting through a dangerous 2D 
 
 ## Core mechanics (3 to 5 verbs or systems)
 1. Run — automatically move forward through the level.
-2. Jump — leap over gaps and obstacles.
-3. Slide — duck under hazards and obstacles.
-4. Dodge — move around incoming threats.
+2. Reverse Gravity - changes the gravity to dodge.
+3. Dodge — move around incoming threats.
 
 ## Dynamics (what emerges when the mechanics meet the player)
 - Players develop a rhythm of jumping, sliding, and dodging as they learn to anticipate obstacles.
@@ -38,8 +37,8 @@ Players take on the role of a fearless courier sprinting through a dangerous 2D 
 - **Store / testing tracks:** awareness only, no uploads
 
 Device: Samsung Galaxy S25 FE, Exynos 2400, 8 GB RAM, Android 16
-Target frame time: 16.7 ms at 60 fps; High FPS toggle: yes (120 FPS target)
-Memory ceiling: under 600 MB
+Target frame time: 60 fps, 99th percentile < 24ms.
+Memory ceiling: Peak memory ceiling under 400 MB
 Cold start: under 4 s to interactive
 APK size: under 100 MB
 
@@ -48,12 +47,27 @@ APK size: under 100 MB
 - Explicitly will not use: ads, one-time purchases or cosmetics.
 
 ## Risks & cuts list (in the order they get cut)
-1. Score multiplier system
-2. Pickup boosts
-3. Extra obstacles
+1. Audio effects
+2. Motion/screen shake
+3. Extra obstacle types
+4. Score multiplier system
 
 ## Scope lock
 - **Locked on:** Wed 16 Sep 2026
+- Gravity reversal
+- Endless movement
+- Hazards/obstacles
+- Pause/resume
+- Android build
+- SafeArea
+- Required accessibility features
+- Decide your optional features
+- Extra obstacle types
+- Pickups
+- Score multiplier
+- Audio
+- Screen shake
+- Extra visual polish
 - **Changes after lock** require a note in the development journal explaining what changed and why.
 
 Reference: Hunicke, LeBlanc and Zubek (2004), *MDA: A Formal Approach to Game Design and Game Research*.
