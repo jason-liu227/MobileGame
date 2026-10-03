@@ -4,3 +4,13 @@ The option I am shortlisting is an endless runner focused on fast, continuous mo
 CPU Main Thread: 16.12ms
 SetPass Calls: 3
 GC allocated: 4.0mb
+
+## Testing Pause	
+
+| Test | Result |
+| -------- | -------- |
+| Press Home → wait 10 sec → return | Paused, panel visible, progress saved |
+| Pull notification shade down/up | Paused |
+| Receive a call → hang up | Paused, return to game with resume |
+| Screen off → turn screen back on | Paused |
+| Force stop → relaunch | Progress saved |
