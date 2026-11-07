@@ -1,5 +1,7 @@
+
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerGravity : MonoBehaviour
 {
     public float gravityStrength = 2f;
@@ -8,11 +10,15 @@ public class PlayerGravity : MonoBehaviour
     private Rigidbody2D rb;
     private bool gravityUp = false;
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
+    void Start()
+    {
+        rb.gravityScale = gravityStrength;
+    }
 
     public void FlipGravity()
     {
@@ -23,9 +29,9 @@ public class PlayerGravity : MonoBehaviour
             ? -gravityStrength
             : gravityStrength;
 
-        // Push the player in the new direction
+        // Push the player vertically
         rb.linearVelocity = new Vector2(
-            rb.linearVelocity.x,
+            0f,
             gravityUp ? flipForce : -flipForce
         );
 
