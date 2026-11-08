@@ -16,7 +16,8 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private float spawnAhead = 22f;
     [SerializeField] private float despawnBehind = 12f;
     [SerializeField] private float minSpacing = 7f;
-    [SerializeField] private float maxSpacing = 11f;
+    [SerializeField] private float maxSpacing = 11f;    
+    [SerializeField] private float spawnInterval = 1.8f;
 
     [Header("Pooling")]
     [SerializeField] private int initialPoolSize = 30;
@@ -28,6 +29,7 @@ public class ObstacleSpawner : MonoBehaviour
         new List<GameObject>();
 
     private float nextSpawnX;
+    private float spawnTimer = 0f;
 
     void Start()
     {
@@ -52,14 +54,18 @@ public class ObstacleSpawner : MonoBehaviour
 
     void Update()
     {
-        float rightLimit = player.position.x + spawnAhead;
+        spawnTimer += Time.deltaTime;
 
-        while (nextSpawnX <= rightLimit)
+        if (spawnTimer >= spawnInterval)
         {
+            spawnTimer = 0f;
+
+            // Spawn at a fixed position to the right
+            nextSpawnX = player.position.x + spawnAhead;
             SpawnObstacle();
-            nextSpawnX += Random.Range(minSpacing, maxSpacing);
         }
 
+        // Recycle obstacles that have moved past the player
         for (int i = active.Count - 1; i >= 0; i--)
         {
             GameObject obstacle = active[i];

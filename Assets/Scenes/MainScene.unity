@@ -238,7 +238,7 @@ MonoBehaviour:
   despawnBehind: 12
   minSpacing: 7
   maxSpacing: 11
-  initialPoolSize: 30
+  initialPoolSize: 300
 --- !u!4 &72648802
 Transform:
   m_ObjectHideFlags: 0
