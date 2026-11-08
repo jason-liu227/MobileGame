@@ -11742,7 +11742,7 @@ IL_0019:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 35314
+// Method Definition Index: 35329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m655CD8122577F0ED360B7C54DA91DFF2604EF71C (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -11811,7 +11811,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 35315
+// Method Definition Index: 35330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m2A23779CEF3505F1F8031A09BA62A27C0AE07E67 (LocalToWorldAndChangeDetectionTransformAccessJob_t958B0C4D12BB629333A3F2941507C705E4D26D56* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -11964,7 +11964,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 35316
+// Method Definition Index: 35331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m1C2F45ADD86FA68D65E0D5D80A6230DE80A349EF (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -11984,7 +11984,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 35314
+// Method Definition Index: 35329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m37B976CCBDDCE10DC94AEEFF8513D8DBA92EB7B8 (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12053,7 +12053,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 35315
+// Method Definition Index: 35330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m0BB4A8A1BBC003BE9566FF0659DC5ED0BC4E56CA (WorldToLocalTransformAccessJob_tFE2332659D5ADE233AC4C8E613ACE9D442FA1EE2* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12206,7 +12206,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 35316
+// Method Definition Index: 35331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_mFEB8BEE90C374BB0864146EFB8FBFFEB889A03A1 (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12226,7 +12226,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 35314
+// Method Definition Index: 35329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_mDADD72EAC54942A34EED7A04285200B518096055_fshared (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12295,7 +12295,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 35315
+// Method Definition Index: 35330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m2C4E058B9EC1B10C2BB3860F8FFDEAF691C7AE3B_fshared (Il2CppFullySharedGenericStruct* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12457,7 +12457,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 35316
+// Method Definition Index: 35331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m46A376B5F4C2AE7512F9DC5C283D41DE2B552D92_fshared (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12477,7 +12477,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 35314
+// Method Definition Index: 35329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m67D9A98C9E81DF92CD6BC6B363F35B5006EAEE76 (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12546,7 +12546,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 35315
+// Method Definition Index: 35330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m5EF361D0BD353203AA224B1D7383DE3C31283243 (UpdateTransformsJob_t7CF957169E8C6560084F48A51BC15A447F3002C7* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -12708,7 +12708,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 35316
+// Method Definition Index: 35331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m5E4C3DB72AE390CA7C34D2F62A1588198C553AFC (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12728,7 +12728,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 35314
+// Method Definition Index: 35329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m9F36034E2022A86184DD2E89C79FC05563857D8F (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12797,7 +12797,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 35315
+// Method Definition Index: 35330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_m754BB48BD719EC9DDE357294044A1EFC491D10CB (WriteTransformTweensParallelJob_tD59797534081AA7C6E58614C2B1886976761F14E* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -12950,7 +12950,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 35316
+// Method Definition Index: 35331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_mE8F60F6D14371E2CE34B4EDEABA8507CDF67EAC9 (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -12970,7 +12970,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 35314
+// Method Definition Index: 35329
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Initialize_m78D5BBEAE222119F2B4866543BC005FF277DFE46 (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -13039,7 +13039,7 @@ IL_004e:
 		return;
 	}
 }
-// Method Definition Index: 35315
+// Method Definition Index: 35330
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1_Execute_mA7D36EBBF9F632A0479A5CED86DE3C093DB9BE12 (WriteTransformsParallelJob_tB84F4306FCE9D9A64D3D4A04A3C4D6CF74046B93* ___0_jobData, intptr_t ___1_jobData2, intptr_t ___2_bufferRangePatchData, JobRanges_t5A1CDFF3E0DB1197050E1E28617B517C15AF6DC3* ___3_ranges, int32_t ___4_jobIndex, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -13192,7 +13192,7 @@ IL_00e0:
 		return;
 	}
 }
-// Method Definition Index: 35316
+// Method Definition Index: 35331
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TransformParallelForLoopStruct_1__cctor_m88C52DA64D372232ECF88E97F825AD2613E736D5 (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -16767,7 +16767,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Tuple_3_System_ITupleInternal_ToStr
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 44417
+// Method Definition Index: 44432
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_m8F517B7356D09DB3B885AC627C1B11853F0F4E3B (FloatTween_t4C6604C5D2B0B4B634B53D545A74431BAE3A98BE ___0_tweenInfo, const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -16783,8 +16783,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_m8F517B735
 		return L_1;
 	}
 }
-// Method Definition Index: 44418
-// Method Definition Index: 44419
+// Method Definition Index: 44433
+// Method Definition Index: 44434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_StartTween_mB94926E3AF23ED3A6EFC8727B6359949BD689DD6 (TweenRunner_1_tF277B20625C8B1939DC85508C4679C690757395E* __this, FloatTween_t4C6604C5D2B0B4B634B53D545A74431BAE3A98BE ___0_info, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16849,8 +16849,8 @@ IL_0044:
 		return;
 	}
 }
-// Method Definition Index: 44420
-// Method Definition Index: 44421
+// Method Definition Index: 44435
+// Method Definition Index: 44436
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -16859,7 +16859,7 @@ IL_0044:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 44417
+// Method Definition Index: 44432
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_m6312DA299DB0D9BEB8A36EB3460648C3ACC364E3_fshared (Il2CppFullySharedGenericStruct ___0_tweenInfo, const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -16876,7 +16876,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_m6312DA299
 		return (RuntimeObject*)L_1;
 	}
 }
-// Method Definition Index: 44418
+// Method Definition Index: 44433
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_Init_m4C73AEECA1DCB09E3A9A227C275B2E24C1CEF192_fshared (TweenRunner_1_t506331CFBEF4B7DD78419718F858F743187D08F0* __this, MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ___0_coroutineContainer, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16887,7 +16887,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_Init_m4C73AEECA1DCB09E3A9A
 		return;
 	}
 }
-// Method Definition Index: 44419
+// Method Definition Index: 44434
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_StartTween_mB084CC7F3B3370EEE23B3FA8707DBFEFEB3BAB5D_fshared (TweenRunner_1_t506331CFBEF4B7DD78419718F858F743187D08F0* __this, Il2CppFullySharedGenericStruct ___0_info, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -16958,7 +16958,7 @@ IL_0044:
 		return;
 	}
 }
-// Method Definition Index: 44420
+// Method Definition Index: 44435
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_StopTween_m782348E0451FB7594F045055A50CDD9DB0C4CE8B_fshared (TweenRunner_1_t506331CFBEF4B7DD78419718F858F743187D08F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -16983,7 +16983,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 44421
+// Method Definition Index: 44436
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mFFBA8A1394D4E000DF6BA61EF59C56273D84DEBC_fshared (TweenRunner_1_t506331CFBEF4B7DD78419718F858F743187D08F0* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17000,7 +17000,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mFFBA8A1394D4E000DF6
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 49836
+// Method Definition Index: 49851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_mB20C8AE701784E49515475A471050D8440D444CF (ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7 ___0_tweenInfo, const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -17016,8 +17016,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_mB20C8AE70
 		return L_1;
 	}
 }
-// Method Definition Index: 49837
-// Method Definition Index: 49838
+// Method Definition Index: 49852
+// Method Definition Index: 49853
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_StartTween_m0D1D370495FF04A6F09D1459E5A03ADB2BB2236D (TweenRunner_1_t5BB0582F926E75E2FE795492679A6CF55A4B4BC4* __this, ColorTween_t15AEF379B51AC7DF9B23C440A938DCF32DA3FBB7 ___0_info, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17082,8 +17082,8 @@ IL_0044:
 		return;
 	}
 }
-// Method Definition Index: 49839
-// Method Definition Index: 49840
+// Method Definition Index: 49854
+// Method Definition Index: 49855
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17092,7 +17092,7 @@ IL_0044:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 49836
+// Method Definition Index: 49851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_m4F400F2F86055B01EF66839CA607B07908E4FC7D (FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A ___0_tweenInfo, const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -17108,8 +17108,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_m4F400F2F8
 		return L_1;
 	}
 }
-// Method Definition Index: 49837
-// Method Definition Index: 49838
+// Method Definition Index: 49852
+// Method Definition Index: 49853
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_StartTween_mA2C386A4A22A6F801A31585E13B10AF4E4FEC2D0 (TweenRunner_1_t830EC096236A3CEC7189DFA6E0B2E74C5C97780B* __this, FloatTween_t11548A42FCB3B005DD83D77A529119381B2BB64A ___0_info, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17174,8 +17174,8 @@ IL_0044:
 		return;
 	}
 }
-// Method Definition Index: 49839
-// Method Definition Index: 49840
+// Method Definition Index: 49854
+// Method Definition Index: 49855
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17184,7 +17184,7 @@ IL_0044:
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 49836
+// Method Definition Index: 49851
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_mAD6D18FE44D639E3EC2EEF54E3FD2EA502532259_fshared (Il2CppFullySharedGenericStruct ___0_tweenInfo, const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -17201,7 +17201,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TweenRunner_1_Start_mAD6D18FE4
 		return (RuntimeObject*)L_1;
 	}
 }
-// Method Definition Index: 49837
+// Method Definition Index: 49852
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_Init_m3980930C9280CE825270CE506C21109D5ABC67BA_fshared (TweenRunner_1_tA3E6EB0834EDD64BCDE6943EAFE03D0522926859* __this, MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71* ___0_coroutineContainer, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17212,7 +17212,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_Init_m3980930C9280CE825270
 		return;
 	}
 }
-// Method Definition Index: 49838
+// Method Definition Index: 49853
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_StartTween_m92B806933AECC7A78982E834DFB5E0A6B4699242_fshared (TweenRunner_1_tA3E6EB0834EDD64BCDE6943EAFE03D0522926859* __this, Il2CppFullySharedGenericStruct ___0_info, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17283,7 +17283,7 @@ IL_0044:
 		return;
 	}
 }
-// Method Definition Index: 49839
+// Method Definition Index: 49854
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1_StopTween_m37DB99A9B05E536CF04651C57196ED6049325A1B_fshared (TweenRunner_1_tA3E6EB0834EDD64BCDE6943EAFE03D0522926859* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17308,7 +17308,7 @@ IL_0020:
 		return;
 	}
 }
-// Method Definition Index: 49840
+// Method Definition Index: 49855
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F731F3F7DB4F2E67217ED38_fshared (TweenRunner_1_tA3E6EB0834EDD64BCDE6943EAFE03D0522926859* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17325,15 +17325,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17342,15 +17342,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17359,15 +17359,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17376,15 +17376,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17393,15 +17393,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17410,15 +17410,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17427,15 +17427,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17444,15 +17444,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17461,15 +17461,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17478,15 +17478,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17495,15 +17495,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17512,15 +17512,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17529,15 +17529,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17546,15 +17546,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17563,15 +17563,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17580,15 +17580,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17597,15 +17597,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17614,15 +17614,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17631,15 +17631,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17648,15 +17648,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17665,15 +17665,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17682,15 +17682,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
-// Method Definition Index: 54917
-// Method Definition Index: 54918
-// Method Definition Index: 54919
-// Method Definition Index: 54920
-// Method Definition Index: 54921
-// Method Definition Index: 54922
-// Method Definition Index: 54923
+// Method Definition Index: 54930
+// Method Definition Index: 54931
+// Method Definition Index: 54932
+// Method Definition Index: 54933
+// Method Definition Index: 54934
+// Method Definition Index: 54935
+// Method Definition Index: 54936
+// Method Definition Index: 54937
+// Method Definition Index: 54938
 #ifdef __clang__
 #pragma clang diagnostic pop
 #endif
@@ -17699,8 +17699,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TweenRunner_1__ctor_mE3994FDD511664B82F7
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
-// Method Definition Index: 54915
-// Method Definition Index: 54916
+// Method Definition Index: 54930
+// Method Definition Index: 54931
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeConstructor_1__ctor_mCC2DDBA49E1A5E34050E36FBBF78034FB04D1415_gshared (TypeConstructor_1_tFF185AD2A1E08A2874947762589A4D832280E8FE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17722,7 +17722,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeConstructor_1__ctor_mCC2DDBA49E1A5E3
 		return;
 	}
 }
-// Method Definition Index: 54917
+// Method Definition Index: 54932
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeConstructor_1_SetImplicitConstructor_m567724D44415F983B593F79A65DF98D0B49A7586_gshared (TypeConstructor_1_tFF185AD2A1E08A2874947762589A4D832280E8FE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -17903,7 +17903,7 @@ IL_00a6:
 		return;
 	}
 }
-// Method Definition Index: 54918
+// Method Definition Index: 54933
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A70EBBF26 TypeConstructor_1_CreateValueTypeInstance_mE82A51832FF8AC458EBFF1DAF32C00E26A1B997F_gshared (const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -17915,7 +17915,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A
 		return L_0;
 	}
 }
-// Method Definition Index: 54919
+// Method Definition Index: 54934
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A70EBBF26 TypeConstructor_1_CreateScriptableObjectInstance_m7808269708154B7FC4A4A23A67857D16C016AA2B_gshared (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -17931,7 +17931,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A
 		return ((*(StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A70EBBF26*)UnBox(L_2, il2cpp_rgctx_data(CHECKED_LOCAL_INIT_PARAM(classRgctxInit,(il2cpp_codegen_method_rgctx(method)),il2cpp_codegen_initialized_method_rgctx,(method)), 4))));
 	}
 }
-// Method Definition Index: 54920
+// Method Definition Index: 54935
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A70EBBF26 TypeConstructor_1_CreateClassInstance_m8420F36ADDA84956FB32B12F2D0E0AAC091DF87A_gshared (const RuntimeMethod* method) 
 {
 	CHECKED_LOCAL(classRgctxInit);
@@ -17942,8 +17942,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A
 		return L_0;
 	}
 }
-// Method Definition Index: 54921
-// Method Definition Index: 54922
+// Method Definition Index: 54936
+// Method Definition Index: 54937
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR StyleEnum_1_tAFD4AA79F79D19DE23805D46DA67778A70EBBF26 TypeConstructor_1_Unity_Properties_TypeUtility_ITypeConstructorU3CTU3E_Instantiate_mDFC4AF8F2F59A00B79672C881DCC617898FC054A_gshared (TypeConstructor_1_tFF185AD2A1E08A2874947762589A4D832280E8FE* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
@@ -18053,7 +18053,7 @@ IL_007c:
 		IL2CPP_RAISE_MANAGED_EXCEPTION(L_22, method);
 	}
 }
-// Method Definition Index: 54923
+// Method Definition Index: 54938
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TypeConstructor_1_Unity_Properties_TypeUtility_ITypeConstructor_Instantiate_m94D3A94CB2318D30FDA3DDF783B2DC2ACF3A2858_gshared (TypeConstructor_1_tFF185AD2A1E08A2874947762589A4D832280E8FE* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19287,7 +19287,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 35606
+// Method Definition Index: 35621
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* ObjectPool_1_Get_m6033387D88EF9D1AD81A89F3045733BC4B98073D_gshared_inline (ObjectPool_1_tC6F0B8E0BAAEC07474AABA8496261838C79CE1F3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19401,7 +19401,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* KeyVal
 		return L_0;
 	}
 }
-// Method Definition Index: 35608
+// Method Definition Index: 35623
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ObjectPool_1_Release_m3183E8F3194884123A027D720D37F341AF367E48_gshared_inline (ObjectPool_1_tC6F0B8E0BAAEC07474AABA8496261838C79CE1F3* __this, Il2CppSharedGenericObject* ___0_element, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19873,7 +19873,7 @@ IL_0046:
 		return L_9;
 	}
 }
-// Method Definition Index: 59218
+// Method Definition Index: 59233
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPtrToStructure_TisTransformJobData_tF0FA739C70A77D3F16E9ACC8A1284993D31DAC0F_m7C964067159E3346E6EA82D7AC04AC79E5E97D10_inline (void* ___0_ptr, TransformJobData_tF0FA739C70A77D3F16E9ACC8A1284993D31DAC0F* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19884,7 +19884,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPt
 		return;
 	}
 }
-// Method Definition Index: 59218
+// Method Definition Index: 59233
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPtrToStructure_TisTransformJobData_tC09C505CEDDC05FECD47EA67F80E1C58CC6D11DC_m476931076386798D0BDF64326B3B3A5430B07AA6_inline (void* ___0_ptr, TransformJobData_tC09C505CEDDC05FECD47EA67F80E1C58CC6D11DC* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19895,7 +19895,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPt
 		return;
 	}
 }
-// Method Definition Index: 59218
+// Method Definition Index: 59233
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPtrToStructure_TisTransformJobData_t1F11AEB2AFA03DCDE2CAE141E7EC28E723261447_mB23A379D7A831CB50C6B5DAC42707585284B88FD_inline (void* ___0_ptr, TransformJobData_t1F11AEB2AFA03DCDE2CAE141E7EC28E723261447* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19906,7 +19906,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPt
 		return;
 	}
 }
-// Method Definition Index: 59218
+// Method Definition Index: 59233
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPtrToStructure_TisTransformJobData_t13902B16CF7C6BB43A7A916637B8BE983764F1E4_m71EE9799C0AC490FE183F7E3A8F8C3511E5C7A6B_inline (void* ___0_ptr, TransformJobData_t13902B16CF7C6BB43A7A916637B8BE983764F1E4* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19917,7 +19917,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPt
 		return;
 	}
 }
-// Method Definition Index: 59218
+// Method Definition Index: 59233
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_CopyPtrToStructure_TisTransformJobData_tB9528D71F68128492E57548A4F58F07A645D4190_m3F9E768F9DF361E4BB7F35BDDCC4FB0774DE0ED8_inline (void* ___0_ptr, TransformJobData_tB9528D71F68128492E57548A4F58F07A645D4190* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19944,7 +19944,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Il2CppSharedGenericObject* Func_1
 	typedef Il2CppSharedGenericObject* (*FunctionPointerType) (RuntimeObject*, const RuntimeMethod*);
 	return ((FunctionPointerType)__this->___invoke_impl)((Il2CppObject*)__this->___method_code, reinterpret_cast<RuntimeMethod*>(__this->___method));
 }
-// Method Definition Index: 35602
+// Method Definition Index: 35617
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ObjectPool_1_get_CountAll_m8372ACA3A976C3FCB45CD77A0AEF0BDA496EBB6D_gshared_inline (ObjectPool_1_tC6F0B8E0BAAEC07474AABA8496261838C79CE1F3* __this, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -19953,7 +19953,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR int32_t ObjectPool_1_get_CountAll
 		return L_0;
 	}
 }
-// Method Definition Index: 35603
+// Method Definition Index: 35618
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void ObjectPool_1_set_CountAll_m6E7C5E741DCB73BD743FC27BACBE1886F4414440_gshared_inline (ObjectPool_1_tC6F0B8E0BAAEC07474AABA8496261838C79CE1F3* __this, int32_t ___0_value, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -20010,7 +20010,7 @@ IL_0034:
 		return;
 	}
 }
-// Method Definition Index: 59219
+// Method Definition Index: 59234
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_InternalCopyPtrToStructure_TisTransformJobData_tF0FA739C70A77D3F16E9ACC8A1284993D31DAC0F_m347B9372ACB73EFB3E9C7D63A011C8DDB3061E8D_inline (void* ___0_ptr, TransformJobData_tF0FA739C70A77D3F16E9ACC8A1284993D31DAC0F* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -20022,7 +20022,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_Intern
 		return;
 	}
 }
-// Method Definition Index: 59219
+// Method Definition Index: 59234
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_InternalCopyPtrToStructure_TisTransformJobData_tC09C505CEDDC05FECD47EA67F80E1C58CC6D11DC_mC1CCE952E566CA25292BCB662CDDBEBFBC390120_inline (void* ___0_ptr, TransformJobData_tC09C505CEDDC05FECD47EA67F80E1C58CC6D11DC* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -20034,7 +20034,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_Intern
 		return;
 	}
 }
-// Method Definition Index: 59219
+// Method Definition Index: 59234
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_InternalCopyPtrToStructure_TisTransformJobData_t1F11AEB2AFA03DCDE2CAE141E7EC28E723261447_mE4F79C724E3B46BE1C1B2785A110DB683C071634_inline (void* ___0_ptr, TransformJobData_t1F11AEB2AFA03DCDE2CAE141E7EC28E723261447* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -20046,7 +20046,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_Intern
 		return;
 	}
 }
-// Method Definition Index: 59219
+// Method Definition Index: 59234
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_InternalCopyPtrToStructure_TisTransformJobData_t13902B16CF7C6BB43A7A916637B8BE983764F1E4_mAF88DE269D12F6BE0B2923D4B385AC132615DCE0_inline (void* ___0_ptr, TransformJobData_t13902B16CF7C6BB43A7A916637B8BE983764F1E4* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>
@@ -20058,7 +20058,7 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_Intern
 		return;
 	}
 }
-// Method Definition Index: 59219
+// Method Definition Index: 59234
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UnsafeUtilityInternal_InternalCopyPtrToStructure_TisTransformJobData_tB9528D71F68128492E57548A4F58F07A645D4190_m7C1C4EEA0CF17A8E6FFA563DCE7E7C9CB81DD308_inline (void* ___0_ptr, TransformJobData_tB9528D71F68128492E57548A4F58F07A645D4190* ___1_output, const RuntimeMethod* method) 
 {
 	//<source_info:<no-source>:1>

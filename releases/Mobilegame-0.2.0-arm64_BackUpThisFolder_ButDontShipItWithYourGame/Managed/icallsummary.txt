@@ -603,6 +603,8 @@ UnityEngine.Font::Internal_CreateFont_Injected
 UnityEngine.FrameTimingManager::GetLatestTimings_Injected
 UnityEngine.FrameTimingManager::CaptureFrameTimings
 UnityEngine.GameObject::GetComponentsInternal_Injected
+UnityEngine.GameObject::CompareTag_Internal_Injected
+UnityEngine.GameObject::IsDestroying_Injected
 UnityEngine.GameObject::get_activeInHierarchy_Injected
 UnityEngine.GameObject::get_activeSelf_Injected
 UnityEngine.GameObject::get_isStatic_Injected
@@ -1014,6 +1016,7 @@ UnityEngine.Object::IsPersistent_Injected
 UnityEngine.Object::GetOffsetOfInstanceIDInCPlusPlusObject
 UnityEngine.Object::FindObjectFromInstanceID_Injected
 UnityEngine.Object::ForceLoadFromInstanceID_Injected
+UnityEngine.Object::Internal_CloneSingleWithParent_Injected
 UnityEngine.Object::Internal_CloneSingle_Injected
 UnityEngine.Object::DestroyImmediate_Injected
 UnityEngine.Object::Destroy_Injected
@@ -1491,7 +1494,6 @@ UnityEngine.ResourcesAPIInternal::Load_Injected
 UnityEngine.ResourcesAPIInternal::UnloadAsset_Injected
 UnityEngine.ResourcesAPIInternal::FindObjectsOfTypeAll
 UnityEngine.ResourcesAPIInternal::LoadAll_Injected
-UnityEngine.Rigidbody2D::get_linearVelocity_Injected
 UnityEngine.Rigidbody2D::get_localToWorldMatrix_Injected
 UnityEngine.Rigidbody2D::set_gravityScale_Injected
 UnityEngine.Rigidbody2D::set_linearVelocity_Injected
@@ -1570,6 +1572,7 @@ UnityEngine.SpriteRenderer::get_flipX_Injected
 UnityEngine.SpriteRenderer::get_flipY_Injected
 UnityEngine.SpriteRenderer::get_sprite_Injected
 UnityEngine.SpriteRenderer::get_size_Injected
+UnityEngine.SpriteRenderer::set_color_Injected
 UnityEngine.SpriteRenderer::set_hasSpriteChangeEvents_Injected
 UnityEngine.SpriteRenderer::set_sprite_Injected
 UnityEngine.SpriteRenderer::get_drawMode_Injected

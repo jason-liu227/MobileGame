@@ -69,7 +69,7 @@
           {
             "name": "AudioBehaviour",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -83,7 +83,7 @@
           {
             "name": "AudioListener",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -154,7 +154,7 @@
           {
             "name": "Camera",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -192,7 +192,7 @@
           {
             "name": "EditorExtension",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -206,7 +206,7 @@
           {
             "name": "GameObject",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -238,7 +238,7 @@
           {
             "name": "LevelGameManager",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -270,7 +270,7 @@
           {
             "name": "LightmapSettings",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -284,7 +284,7 @@
           {
             "name": "Material",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -310,7 +310,7 @@
           {
             "name": "MonoBehaviour",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -324,7 +324,7 @@
           {
             "name": "MonoScript",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -332,7 +332,7 @@
           {
             "name": "NamedObject",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 1,
             "icon": null
@@ -370,7 +370,7 @@
           {
             "name": "RectTransform",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -384,7 +384,7 @@
           {
             "name": "RenderSettings",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -398,7 +398,7 @@
           {
             "name": "Renderer",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -418,7 +418,7 @@
           {
             "name": "Shader",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -444,7 +444,7 @@
           {
             "name": "Sprite",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -458,7 +458,7 @@
           {
             "name": "SpriteRenderer",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -478,7 +478,7 @@
           {
             "name": "Texture",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -486,7 +486,7 @@
           {
             "name": "Texture2D",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1124,7 +1124,7 @@
           {
             "name": "BoxCollider2D",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1156,7 +1156,7 @@
           {
             "name": "Rigidbody2D",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1644,7 +1644,7 @@
           {
             "name": "Font",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1721,7 +1721,7 @@
           {
             "name": "Canvas",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
@@ -1735,7 +1735,7 @@
           {
             "name": "CanvasRenderer",
             "scenes": [
-              "Assets/Scenes/SampleScene.unity"
+              "Assets/Scenes/MainScene.unity"
             ],
             "dependencyType": 0,
             "icon": null
