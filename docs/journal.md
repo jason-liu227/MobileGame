@@ -16,11 +16,11 @@ GC allocated: 4.0mb
 | Force stop → relaunch | Progress saved |
 
 ## CPU capture of worst case
- Worst-frame main-thread ms: 16.55 ms  
+ Worst-frame main-thread ms: 17.05 ms  
  The tallest marker name: PlayerLoop  
  Top three hierarchy entries:
- - TimeManager.Update - 9.68 Self ms
- - PostLateUpdate.MemoryFrameMaintenance - 0.14 Self ms
- - Input.Android.ProcessTouchEvent - 0.01 Self ms  
- 
+ - WaitForTargetFPS - 11.44 Self ms 
+ - PrepareSceneNodes - 0.08 Self ms
+ - PostLateUpdate.FinishFrameRendering - 0.07 Self ms  
+
  GC.Collect: No
