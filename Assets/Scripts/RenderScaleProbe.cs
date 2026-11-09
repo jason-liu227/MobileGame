@@ -17,10 +17,22 @@ public class RenderScaleProbe : MonoBehaviour
         _full = _urp.renderScale;
     }
 
-    public void Toggle()                  // bind to a debug button
+
+    public void Toggle()
     {
+        Debug.Log("[Probe] Button clicked!");
+
+        if (_urp == null)
+        {
+            Debug.LogError("[Probe] URP asset is NULL!");
+            return;
+        }
+
         bool atFull = Mathf.Approximately(_urp.renderScale, _full);
+
         _urp.renderScale = atFull ? lowScale : _full;
-        Debug.Log($"[Probe] renderScale = {_urp.renderScale}");
+
+        Debug.Log("[Probe] Render Scale = " + _urp.renderScale);
     }
+
 }
