@@ -14,3 +14,13 @@ GC allocated: 4.0mb
 | Receive a call → hang up | Paused, return to game with resume |
 | Screen off → turn screen back on | Paused |
 | Force stop → relaunch | Progress saved |
+
+## CPU capture of worst case
+ Worst-frame main-thread ms: 17.05 ms  
+ The tallest marker name: PlayerLoop  
+ Top three hierarchy entries:
+ - WaitForTargetFPS - 11.44 Self ms 
+ - PrepareSceneNodes - 0.08 Self ms
+ - PostLateUpdate.FinishFrameRendering - 0.07 Self ms  
+
+ GC.Collect: No
