@@ -106,3 +106,7 @@ InitTestScene*.unity*
 
 *.keystore
 *.jks
+
+# Unity IL2CPP generated build files
+Il2CppOutput/
+**/Il2CppOutput/
