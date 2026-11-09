@@ -1801,6 +1801,7 @@ GameObject:
   - component: {fileID: 1024780139}
   - component: {fileID: 1024780140}
   - component: {fileID: 1024780141}
+  - component: {fileID: 1024780142}
   m_Layer: 0
   m_Name: Bootstrap
   m_TagString: Untagged
@@ -1861,6 +1862,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ab48cf9f3e7ff34ba543ac7216c1fe5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LifecycleGuard
+--- !u!114 &1024780142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024780137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3178990f59ab91f43acc46499c97c4a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FrameTimeSampler
 --- !u!1 &1041607390
 GameObject:
   m_ObjectHideFlags: 0
