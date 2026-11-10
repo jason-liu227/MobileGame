@@ -1,4 +1,3 @@
-
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,9 +17,14 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private float minSpacing = 7f;
     [SerializeField] private float maxSpacing = 11f;    
     [SerializeField] private float spawnInterval = 1.8f;
+    [SerializeField] private float speed = 5f;
 
     [Header("Pooling")]
     [SerializeField] private int initialPoolSize = 30;
+
+    [SerializeField] private CoinPool coinPool;
+    [SerializeField] private float coinOffset = 1.5f;
+    [SerializeField] private float coinSpacing = 0.8f;
 
     private readonly Queue<GameObject> available =
         new Queue<GameObject>();
@@ -102,6 +106,19 @@ public class ObstacleSpawner : MonoBehaviour
 
         obstacle.SetActive(true);
         active.Add(obstacle);
+
+        MovingObstacle movement =
+            obstacle.GetComponent<MovingObstacle>();
+        if (coinPool != null)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Vector3 coinPosition = obstacle.transform.position;
+                coinPosition.x -= coinOffset + i * coinSpacing;
+
+                coinPool.Spawn(coinPosition, speed);
+            }
+        }
     }
 }
 
