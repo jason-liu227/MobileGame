@@ -1,4 +1,3 @@
-
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,9 +17,14 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private float minSpacing = 7f;
     [SerializeField] private float maxSpacing = 11f;    
     [SerializeField] private float spawnInterval = 1.8f;
+    [SerializeField] private float speed = 5f;
 
     [Header("Pooling")]
     [SerializeField] private int initialPoolSize = 30;
+
+    [SerializeField] private CoinPool coinPool;
+    [SerializeField] private float coinOffset = 1.5f;
+    [SerializeField] private float coinSpacing = 0.8f;
 
     private readonly Queue<GameObject> available =
         new Queue<GameObject>();
@@ -31,6 +35,16 @@ public class ObstacleSpawner : MonoBehaviour
     private float nextSpawnX;
     private float spawnTimer = 0f;
 
+    private void Awake()
+    {
+        for (int i = 0; i < initialPoolSize; i++)
+        {
+            GameObject obstacle = Instantiate(obstaclePrefab, transform);
+            obstacle.SetActive(false);
+            available.Enqueue(obstacle);
+        }
+    }
+
     void Start()
     {
         if (player == null || obstaclePrefab == null)
@@ -38,15 +52,6 @@ public class ObstacleSpawner : MonoBehaviour
             Debug.LogError("ObstacleSpawner: Missing references!");
             enabled = false;
             return;
-        }
-
-        for (int i = 0; i < initialPoolSize; i++)
-        {
-            GameObject obstacle = Instantiate(
-                obstaclePrefab, transform);
-
-            obstacle.SetActive(false);
-            available.Enqueue(obstacle);
         }
 
         nextSpawnX = player.position.x + 8f;
@@ -82,17 +87,10 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
-        GameObject obstacle;
+        if (available.Count == 0)
+            return;
 
-        if (available.Count > 0)
-        {
-            obstacle = available.Dequeue();
-        }
-        else
-        {
-            obstacle = Instantiate(
-                obstaclePrefab, transform);
-        }
+        GameObject obstacle = available.Dequeue();
 
         bool onTop = Random.value > 0.5f;
         float y = onTop ? topY : bottomY;
@@ -102,6 +100,19 @@ public class ObstacleSpawner : MonoBehaviour
 
         obstacle.SetActive(true);
         active.Add(obstacle);
+
+        MovingObstacle movement =
+            obstacle.GetComponent<MovingObstacle>();
+        if (coinPool != null)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                Vector3 coinPosition = obstacle.transform.position;
+                coinPosition.x -= coinOffset + i * coinSpacing;
+
+                coinPool.Spawn(coinPosition, speed);
+            }
+        }
     }
 }
 
