@@ -1,13 +1,13 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))] 
-
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerCollision : MonoBehaviour
 {
-    private bool crashed;
     [SerializeField] private GameManager gameManager;
 
-    void OnTriggerEnter2D(Collider2D other)
+    private bool crashed;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (crashed || !other.CompareTag("Obstacle"))
             return;
@@ -16,21 +16,23 @@ public class PlayerCollision : MonoBehaviour
 
         Debug.Log("Player hit an obstacle!");
 
-        // Temporary crash feedback.
-        // Later we can connect this to Game Over UI.
-        GetComponent<SpriteRenderer>().color = Color.red;
+        // Crash feedback
+        SpriteRenderer sprite = GetComponent<SpriteRenderer>();
+
+        if (sprite != null)
+            sprite.color = Color.red;
+
+        // Trigger lose state
+        if (gameManager != null)
+        {
+            Debug.Log("Setting game state to Lost");
+            gameManager.SetState(GameManager.State.Lost);
+        }
+        else
+        {
+            Debug.LogError("PlayerCollision: GameManager is not assigned!");
+        }
 
         enabled = false;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Obstacle"))
-        {
-            if (gameManager != null)
-            {
-                gameManager.SetState(GameManager.State.Lost);
-            }
-        }
     }
 }

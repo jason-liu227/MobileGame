@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     public event Action<State> StateChanged;
 
     public State CurrentState { get; private set; }
+
+    public static State LastResult { get; private set; }
 
     private void Start()
     {
@@ -43,6 +46,16 @@ public class GameManager : MonoBehaviour
 
         if (stateChanged)
             StateChanged?.Invoke(newState);
+
+        if (stateChanged &&
+            (newState == State.Won || newState == State.Lost))
+        {
+            LastResult = newState;
+
+            // Temporary transition until Lab B SceneLoader is implemented.
+            Time.timeScale = 1f;
+            SceneManager.LoadScene("ResultScene");
+        }
     }
 
     public void PauseGame()
