@@ -35,16 +35,14 @@ public class GameManager : MonoBehaviour
 
     public void SetState(State newState)
     {
-        if (CurrentState == newState)
-            return;
+        bool stateChanged = CurrentState != newState;
 
         CurrentState = newState;
 
-        // Stop gameplay when not playing
         Time.timeScale = newState == State.Playing ? 1f : 0f;
 
-        // Notify other scripts
-        StateChanged?.Invoke(newState);
+        if (stateChanged)
+            StateChanged?.Invoke(newState);
     }
 
     public void PauseGame()

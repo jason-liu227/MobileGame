@@ -1,10 +1,11 @@
-
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody2D))]
+[RequireComponent(typeof(Rigidbody2D))] 
+
 public class PlayerCollision : MonoBehaviour
 {
     private bool crashed;
+    [SerializeField] private GameManager gameManager;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,5 +21,16 @@ public class PlayerCollision : MonoBehaviour
         GetComponent<SpriteRenderer>().color = Color.red;
 
         enabled = false;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            if (gameManager != null)
+            {
+                gameManager.SetState(GameManager.State.Lost);
+            }
+        }
     }
 }
