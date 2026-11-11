@@ -35,6 +35,16 @@ public class ObstacleSpawner : MonoBehaviour
     private float nextSpawnX;
     private float spawnTimer = 0f;
 
+    private void Awake()
+    {
+        for (int i = 0; i < initialPoolSize; i++)
+        {
+            GameObject obstacle = Instantiate(obstaclePrefab, transform);
+            obstacle.SetActive(false);
+            available.Enqueue(obstacle);
+        }
+    }
+
     void Start()
     {
         if (player == null || obstaclePrefab == null)
@@ -42,15 +52,6 @@ public class ObstacleSpawner : MonoBehaviour
             Debug.LogError("ObstacleSpawner: Missing references!");
             enabled = false;
             return;
-        }
-
-        for (int i = 0; i < initialPoolSize; i++)
-        {
-            GameObject obstacle = Instantiate(
-                obstaclePrefab, transform);
-
-            obstacle.SetActive(false);
-            available.Enqueue(obstacle);
         }
 
         nextSpawnX = player.position.x + 8f;
@@ -86,17 +87,10 @@ public class ObstacleSpawner : MonoBehaviour
 
     void SpawnObstacle()
     {
-        GameObject obstacle;
+        if (available.Count == 0)
+            return;
 
-        if (available.Count > 0)
-        {
-            obstacle = available.Dequeue();
-        }
-        else
-        {
-            obstacle = Instantiate(
-                obstaclePrefab, transform);
-        }
+        GameObject obstacle = available.Dequeue();
 
         bool onTop = Random.value > 0.5f;
         float y = onTop ? topY : bottomY;
