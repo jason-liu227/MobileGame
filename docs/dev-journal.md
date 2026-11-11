@@ -62,3 +62,8 @@ The game maintained frame times close to the 60 FPS target. The worst-case p99 w
 - Triangles in selected frame: **45**
 - Peak Total Reserved: Not available in current Profiler view.
 - Worst-case SetPass Calls: Not yet confirmed.
+
+## Week 5 - Lab A
+### 9/11/2026
+
+No .cs files contains IEnumerator or StartCoroutine
