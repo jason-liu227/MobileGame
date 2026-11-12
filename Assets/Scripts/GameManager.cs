@@ -52,9 +52,12 @@ public class GameManager : MonoBehaviour
         {
             LastResult = newState;
 
-            // Temporary transition until Lab B SceneLoader is implemented.
             Time.timeScale = 1f;
-            SceneManager.LoadScene("ResultScene");
+
+            _ = SceneLoader.Instance.Load(
+                "ResultScene",
+                Application.exitCancellationToken
+            ); ;
         }
     }
 
