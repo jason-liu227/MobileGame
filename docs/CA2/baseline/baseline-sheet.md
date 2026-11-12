@@ -9,7 +9,7 @@
 | GC allocated per frame (bytes), allocating markers | GC allocated per frame (bytes), allocating markers **99 B** (selected frame); `GC.Alloc` under `Inl_Record Render Graph` (48 B); remaining 51 B not identified |
 | Peak Total Reserved (MB) / TOTAL PSS (MB) | Not available; peak Total Allocated ≈ 625 MB / Total PSS = 374.3 MB|
 | Worst case: SetPass / batches / triangles | 6 / 5 / 45 |
-| Cold start ms (median of 3), first interactive s | 71 ms|
-| APK size (MB) | 60.17 MB |
+| Cold start ms (median of 3), first interactive s | 484 ms median (588, 477, 484 ms; all LaunchState: COLD) · 2.33 s median to interactive (2.33, 2.34, 2.32 s)|
+| APK size (MB) | 57.44 MiB (60,229,720 bytes; Mobilegame-0.3.0-arm64.apk) |
 | Thermal delta, throttling (Week 7) | |
-| Load time (Week 5) | |
+| Load time (Week 5) | MenuScene: 170, 170, 151 ms (median 170 ms) · GameScene: 137, 116 ms · ResultScene: 76 ms |

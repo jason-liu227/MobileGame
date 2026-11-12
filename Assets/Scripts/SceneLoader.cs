@@ -3,6 +3,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using Stopwatch = System.Diagnostics.Stopwatch;
 
 public class SceneLoader : MonoBehaviour
 {
@@ -32,6 +33,7 @@ public class SceneLoader : MonoBehaviour
         if (isLoading)
             return;
 
+        Stopwatch sw = Stopwatch.StartNew();
         isLoading = true;
         loadingScreen.SetActive(true);
         bar.value = 0f;
@@ -60,6 +62,11 @@ public class SceneLoader : MonoBehaviour
             // Important: activate BEFORE awaiting completion.
             op.allowSceneActivation = true;
             await op;
+
+            sw.Stop();
+            UnityEngine.Debug.Log(
+                $"[perf] scene {scene} loaded in {sw.ElapsedMilliseconds} ms"
+            );
         }
         catch (OperationCanceledException)
         {
