@@ -18,7 +18,9 @@ public class ResultManager : MonoBehaviour
 
     public void Retry()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("GameScene");
+        _ = SceneLoader.Instance.Load(
+            "GameScene",
+            Application.exitCancellationToken
+        );
     }
 }
