@@ -1,13 +1,19 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Bootstrap : MonoBehaviour
 {
-    void Awake()
+    private void Awake()
     {
         Application.targetFrameRate = 60;
         DontDestroyOnLoad(gameObject);
     }
-    async Awaitable Start() => await SceneManager.LoadSceneAsync("MenuScene");
+
+    private async Awaitable Start()
+    {
+        await SceneLoader.Instance.Load(
+            "MenuScene",
+            Application.exitCancellationToken
+        );
+    }
 }
 

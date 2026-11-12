@@ -1,4 +1,3 @@
-
 using UnityEngine;
 
 public class CoinManager : MonoBehaviour
@@ -7,6 +6,7 @@ public class CoinManager : MonoBehaviour
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip pickupSound;
+    [SerializeField] private ScoreManager scoreManager;
 
     public int CoinsCollected { get; private set; }
 
@@ -18,6 +18,11 @@ public class CoinManager : MonoBehaviour
     public void CollectCoin()
     {
         CoinsCollected++;
+
+        if (scoreManager != null)
+        {
+            scoreManager.AddCoin();
+        }
 
         if (audioSource != null && pickupSound != null)
             audioSource.PlayOneShot(pickupSound);

@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class GameManager : MonoBehaviour
     public event Action<State> StateChanged;
 
     public State CurrentState { get; private set; }
+
+    public static State LastResult { get; private set; }
 
     private void Start()
     {
@@ -35,16 +38,27 @@ public class GameManager : MonoBehaviour
 
     public void SetState(State newState)
     {
-        if (CurrentState == newState)
-            return;
+        bool stateChanged = CurrentState != newState;
 
         CurrentState = newState;
 
-        // Stop gameplay when not playing
         Time.timeScale = newState == State.Playing ? 1f : 0f;
 
-        // Notify other scripts
-        StateChanged?.Invoke(newState);
+        if (stateChanged)
+            StateChanged?.Invoke(newState);
+
+        if (stateChanged &&
+            (newState == State.Won || newState == State.Lost))
+        {
+            LastResult = newState;
+
+            Time.timeScale = 1f;
+
+            _ = SceneLoader.Instance.Load(
+                "ResultScene",
+                Application.exitCancellationToken
+            ); ;
+        }
     }
 
     public void PauseGame()
