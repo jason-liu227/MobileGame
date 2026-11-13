@@ -143,3 +143,26 @@ The vertical slice now includes gravity reversal, obstacles, coin collection, sc
 Android startup performance met the required budget, and asynchronous scene loading was implemented successfully.
 
 The next priority is improving the clarity of the controls and survival objective for new players.
+
+## Week 6 Lab A — Economy Pacing
+
+### Economy settings
+- Coins earned per pickup before tuning: 10
+- Coins earned per pickup after tuning: 5
+- Upgrade costs: 100, 150, 225, 337, 506 ...
+
+### Pacing results
+- Time of first upgrade: [30s]
+- Coins remaining after 3 minutes: [392]
+- Upgrades purchased after 3 minutes: [3-4]
+- First upgrade within 2 minutes: [Yes]
+
+### Upgrade impact
+Each purchased upgrade increases obstacle and coin movement speed by 0.5 units per second and increases score earned per second by 10%. Players feel the upgrade through faster-moving obstacles, which demand quicker gravity reversals, while the increased score rate rewards the additional difficulty.
+
+### Reflection
+The inital 10 coins per pickup was too fast for the game. The first ugrade was purchasable within 15 seconds of the game and 4-5 upgrades can be unlocked before 3 minutes of gameplay.
+
+After tuning the coin gain to 5 per pickup, the first upgrade is purchasable approximately after 20-30 seconds.
+
+For and endless runner the tuning was required as the game would become too difficult at an unreasonable pace. Lowering the gain would allow the player to get used to the difficulty increase and be prepared for an increased dificulty.

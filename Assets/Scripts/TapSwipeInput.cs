@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem.EnhancedTouch;
 using Touch = UnityEngine.InputSystem.EnhancedTouch.Touch;
 using TouchPhase = UnityEngine.InputSystem.TouchPhase;
+using UnityEngine.InputSystem;
 
 public class TapSwipeInput : MonoBehaviour
 {
@@ -32,6 +33,12 @@ public class TapSwipeInput : MonoBehaviour
 
     void Update()
     {
+        if (Keyboard.current != null &&
+    Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            // Call the same gravity-reversal method used by your tap input.
+            player.FlipGravity();
+        }
         if (LifecycleGuard.IsPaused)
     return;
         foreach (var t in Touch.activeTouches)
