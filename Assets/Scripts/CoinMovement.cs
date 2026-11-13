@@ -2,19 +2,22 @@ using UnityEngine;
 
 public class CoinMovement : MonoBehaviour
 {
-    private float speed;
+    [SerializeField] private float speed = 5f;
+    [SerializeField] private float speedIncreasePerUpgrade = 0.5f;
+
+    private void Update()
+    {
+        int level = Wallet.Instance != null
+            ? Wallet.Instance.Level
+            : 0;
+
+        float currentSpeed = speed + level * speedIncreasePerUpgrade;
+
+        transform.position += Vector3.left * currentSpeed * Time.deltaTime;
+    }
 
     public void SetSpeed(float newSpeed)
     {
         speed = newSpeed;
     }
-
-    private void Update()
-    {
-        transform.Translate(Vector3.left * speed * Time.deltaTime);
-
-        if (transform.position.x < -12f)
-            GetComponent<CoinPickup>().ReturnToPool();
-    }
-
 }

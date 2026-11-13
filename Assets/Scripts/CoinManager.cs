@@ -6,7 +6,6 @@ public class CoinManager : MonoBehaviour
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip pickupSound;
-    [SerializeField] private ScoreManager scoreManager;
 
     public int CoinsCollected { get; private set; }
 
@@ -19,15 +18,18 @@ public class CoinManager : MonoBehaviour
     {
         CoinsCollected++;
 
-        if (scoreManager != null)
+        if (Wallet.Instance != null)
         {
-            scoreManager.AddCoin();
+            Wallet.Instance.Earn(5);
+        }
+        else
+        {
+            Debug.LogError("Wallet not found!");
         }
 
         if (audioSource != null && pickupSound != null)
             audioSource.PlayOneShot(pickupSound);
 
-        Debug.Log("Coins: " + CoinsCollected);
+        Debug.Log("Coins collected: " + CoinsCollected);
     }
 }
-
