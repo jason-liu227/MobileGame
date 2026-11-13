@@ -1,7 +1,6 @@
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,12 +15,46 @@ public class GameManager : MonoBehaviour
     public event Action<State> StateChanged;
 
     public State CurrentState { get; private set; }
-
     public static State LastResult { get; private set; }
+
+    [Header("Telemetry")]
+    [SerializeField] private int levelId = 1;
+    [SerializeField] private ScoreManager scoreManager;
+
+    private static int attemptCount;
+    private float levelStartTime;
+    private int startingCoins;
+    private int startingCoinsCollected;
+    private bool levelStarted;
 
     private void Start()
     {
+        StartLevel();
+    }
+
+    private void StartLevel()
+    {
+        attemptCount++;
+        levelStarted = true;
+
+        levelStartTime = Time.time;
+
+        startingCoins = Wallet.Instance != null
+            ? Wallet.Instance.Coins
+            : 0;
+
+        startingCoinsCollected = CoinManager.Instance != null
+            ? CoinManager.Instance.CoinsCollected
+            : 0;
+
         SetState(State.Playing);
+
+        Telemetry.Log(
+            "level_start",
+            ("level_id", levelId),
+            ("attempt", attemptCount),
+            ("coins", startingCoins)
+        );
     }
 
     private void Update()
@@ -38,26 +71,59 @@ public class GameManager : MonoBehaviour
 
     public void SetState(State newState)
     {
-        bool stateChanged = CurrentState != newState;
+        if (CurrentState == newState)
+            return;
 
         CurrentState = newState;
 
         Time.timeScale = newState == State.Playing ? 1f : 0f;
 
-        if (stateChanged)
-            StateChanged?.Invoke(newState);
+        StateChanged?.Invoke(newState);
 
-        if (stateChanged &&
-            (newState == State.Won || newState == State.Lost))
+        if (!levelStarted)
+            return;
+
+        if (newState == State.Won || newState == State.Lost)
         {
-            LastResult = newState;
+            float elapsedTime = Time.time - levelStartTime;
 
+            int coinsEarned = CoinManager.Instance != null
+                ? (CoinManager.Instance.CoinsCollected -
+                   startingCoinsCollected) * 5
+                : 0;
+
+            if (newState == State.Won)
+            {
+                int score = scoreManager != null
+                    ? scoreManager.CurrentScore
+                    : 0;
+
+                Telemetry.Log(
+                    "level_complete",
+                    ("level_id", levelId),
+                    ("time_s", elapsedTime),
+                    ("coins_earned", coinsEarned),
+                    ("score", score)
+                );
+            }
+            else
+            {
+                Telemetry.Log(
+                    "level_fail",
+                    ("level_id", levelId),
+                    ("time_s", elapsedTime),
+                    ("cause", "spike"),
+                    ("coins_earned", coinsEarned)
+                );
+            }
+
+            LastResult = newState;
             Time.timeScale = 1f;
 
             _ = SceneLoader.Instance.Load(
                 "ResultScene",
                 Application.exitCancellationToken
-            ); ;
+            );
         }
     }
 
@@ -94,4 +160,3 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1f;
     }
 }
-
