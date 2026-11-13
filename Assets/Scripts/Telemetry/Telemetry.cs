@@ -36,6 +36,7 @@ public static class Telemetry
         string line = sb.ToString();
 
         Debug.Log("[telemetry] " + line);
+        Debug.Log("Telemetry file: " + path);
 
         File.AppendAllText(path, line + "\n");
     }
