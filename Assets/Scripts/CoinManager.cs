@@ -20,7 +20,7 @@ public class CoinManager : MonoBehaviour
 
         if (Wallet.Instance != null)
         {
-            Wallet.Instance.Earn(10);
+            Wallet.Instance.Earn(5);
         }
         else
         {

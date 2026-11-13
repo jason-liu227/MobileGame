@@ -99,3 +99,9 @@ Analytics
 Ads
 
 No intentional network endpoint or third-party advertising/analytics service was identified during this review.
+
+## Local Game Progress Storage
+
+The game stores the player's coin balance and purchased upgrade level locally on their device using Unity PlayerPrefs. This information is used to restore gameplay progress when the game is reopened.
+
+The simulated in-app purchase feature does not process real payments or collect payment information. No real store integration is included.
