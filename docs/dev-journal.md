@@ -166,3 +166,37 @@ The inital 10 coins per pickup was too fast for the game. The first ugrade was p
 After tuning the coin gain to 5 per pickup, the first upgrade is purchasable approximately after 20-30 seconds.
 
 For and endless runner the tuning was required as the game would become too difficult at an unreasonable pace. Lowering the gain would allow the player to get used to the difficulty increase and be prepared for an increased dificulty.
+
+## Week 6 Lab B — Telemetry, Persistence and Async Pack 1
+
+### Telemetry Events
+
+Implemented five telemetry events in *Endless Runner – Dashline*:
+
+1. `session_start` — Records the application version and device information when the game launches.
+2. `level_start` — Records the level ID, attempt number and starting coins.
+3. `level_complete` — Records completion time, coins earned and final score.
+4. `level_fail` — Records survival time, failure cause and coins earned.
+5. `upgrade_purchased` — Records the upgrade purchased, its cost and remaining coins.
+
+Telemetry is recorded in Android logcat and stored locally in `telemetry.log`.
+
+### Android Save and Resume Testing
+
+| Test | Result |
+|---|---|
+| Home button → resume game | PASS |
+| Force-stop → relaunch game | PASS |
+| Background process kill → relaunch | PASS |
+| Wallet coins and upgrade level persist | PASS |
+| Telemetry log persists after relaunch | PASS |
+
+**Telemetry evidence:** `docs/CA2/telemetry/telemetry.log`
+
+### Async Pack 1 — Monetisation Models & Ethics
+
+**Due date:** Sunday 1 November 2026.
+
+Completed a reflection covering the game's earn–spend–upgrade economy, proposed free-to-play monetisation model, and five dark-pattern risks with ethical guardrails.
+
+The current game uses a simulated purchase provider, with no real-money IAP SDK implemented.
