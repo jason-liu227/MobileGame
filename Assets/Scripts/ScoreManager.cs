@@ -14,6 +14,8 @@ public class ScoreManager : MonoBehaviour
 
     private float score;
 
+    public int CurrentScore => Mathf.FloorToInt(score);
+
     private void Start()
     {
         UpdateDisplay();
