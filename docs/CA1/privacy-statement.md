@@ -105,3 +105,13 @@ No intentional network endpoint or third-party advertising/analytics service was
 The game stores the player's coin balance and purchased upgrade level locally on their device using Unity PlayerPrefs. This information is used to restore gameplay progress when the game is reopened.
 
 The simulated in-app purchase feature does not process real payments or collect payment information. No real store integration is included.
+
+## Local Gameplay Telemetry
+
+The game records local gameplay events, including session starts, level starts, level completions, level failures, and upgrade purchases.
+
+These records include gameplay statistics, application version, device model, and Android operating system information. Events are stored in a local file named `telemetry.log` within the application's persistent data directory and are also written to Android's diagnostic log.
+
+No third-party analytics SDK is used, and the game does not automatically transmit telemetry to an external server. Telemetry files may be retrieved manually during development and testing for gameplay balancing.
+
+The telemetry log may grow over time and is removed when the application's local data is cleared.
