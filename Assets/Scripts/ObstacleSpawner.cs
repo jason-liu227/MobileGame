@@ -103,6 +103,12 @@ public class ObstacleSpawner : MonoBehaviour
 
         MovingObstacle movement =
             obstacle.GetComponent<MovingObstacle>();
+
+        if (movement != null)
+        {
+            movement.SetSpeed(speed);
+        }
+
         if (coinPool != null)
         {
             for (int i = 0; i < 5; i++)
@@ -113,6 +119,7 @@ public class ObstacleSpawner : MonoBehaviour
                 coinPool.Spawn(coinPosition, speed);
             }
         }
+
     }
 }
 

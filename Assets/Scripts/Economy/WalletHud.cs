@@ -32,7 +32,7 @@ public class WalletHud : MonoBehaviour
 
     private void Refresh()
     {
-        coinsLabel.SetText("{0}", wallet.Coins);
+        coinsLabel.SetText("Coins: {0}", wallet.Coins);
         upgradeLabel.SetText("Upgrade ({0})", wallet.NextCost);
         upgradeButton.interactable = wallet.Coins >= wallet.NextCost;
     }

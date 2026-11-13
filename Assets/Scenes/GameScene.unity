@@ -257,7 +257,6 @@ GameObject:
   m_Component:
   - component: {fileID: 72648802}
   - component: {fileID: 72648801}
-  - component: {fileID: 72648803}
   m_Layer: 0
   m_Name: ObstacleSpawner
   m_TagString: Untagged
@@ -306,19 +305,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &72648803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 72648800}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb749f0088bca243bd67e10f8e22fed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MovingObstacle
-  speed: 5
 --- !u!1 &101851314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2258,7 +2244,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CoinManager
   audioSource: {fileID: 1934172436}
   pickupSound: {fileID: 8300000, guid: 076d3f3bd0250a0429f79873a1f7bf9d, type: 3}
-  scoreManager: {fileID: 1660035812}
 --- !u!114 &1026213044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3020,10 +3005,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   gameManager: {fileID: 2049042547}
   scoreText: {fileID: 1297820482}
-  coinText: {fileID: 1971472500}
   startingPointsPerSecond: 10
-  increaseEverySeconds: 20
-  rateIncrease: 1
+  scoreBonusPerUpgrade: 0.1
 --- !u!1 &1707088005
 GameObject:
   m_ObjectHideFlags: 0
