@@ -1,0 +1,13 @@
+11-14 14:13:40.380  5374  5396 I Unity   : [AP] bottleneck=Unknown
+11-14 14:13:40.764  5374  5396 I Unity   : [AP] bottleneck=TargetFrameRate
+11-14 14:13:50.619  5374  5396 I Unity   : [AP] bottleneck=Unknown
+11-14 14:13:52.293  5374  5396 I Unity   : [AP] bottleneck=TargetFrameRate
+11-14 14:13:55.465  5374  5396 I Unity   : perf_mode=Balanced high=False
+11-14 14:13:56.616  5374  5396 I Unity   : perf_mode=HighFps high=True
+11-14 14:13:56.679  5374  5396 I Unity   : [AP] bottleneck=Unknown
+11-14 14:13:57.514  5374  5396 I Unity   : [AP] bottleneck=TargetFrameRate
+11-14 14:14:02.850  5374  5396 I Unity   : perf_mode=Balanced high=False
+11-14 14:14:03.835  5374  5396 I Unity   : perf_mode=HighFps high=True
+11-14 14:14:03.908  5374  5396 I Unity   : [AP] bottleneck=Unknown
+11-14 14:14:04.741  5374  5396 I Unity   : [AP] bottleneck=TargetFrameRate
+
