@@ -50,3 +50,41 @@
 **Testing:** Performed three Android cold starts using ADB, force-stopping the application before each launch. All three launches reported `LaunchState: COLD`.
 
 **Observation:** The median Android cold-start time was 484 ms, below the 5,000 ms budget. The median time to interactive was 2.33 seconds. Scene loading completed successfully, with `MenuScene` loading in 151–170 ms, `GameScene` in 116–137 ms, and `ResultScene` in 76 ms.
+
+## Week 7 Lab B - Thermals
+
+**Test:** 0, 5, 10-minute thermal soak on Android  
+**Performance mode:** Balanced (60 FPS target, URP render scale 1.0)  
+
+| Field | Value |
+| :--- | :--- |
+| Build ID and mode | v0.7.1 (95147e6), Balanced |
+| Start temperature (°C) | **25.9°C** |
+| End temperature (°C) and 10-minute delta | **23.4°C**, delta **−2.5°C** |
+| Overlay level at minute 0 / 5 / 10 | 0.38 / 0.36 / 0.35 (all NoWarning) |
+| First `ThrottlingImminent` (minute, logcat time) | Not observed |
+| `Throttling` observed (yes/no, minute) | No throttling observed |
+| Frame time before: mean / 99th (ms) | **16.67 ms / 16.90 ms** |
+| Frame time after: mean / 99th (ms) | **16.67 ms / 17.08 ms** (17:59:13 logcat interval) |
+| Conditions | Unplugged, brightness ~50%, case off, ambient temperature about 22 C |
+
+### Findings
+
+During the thermal soak, Dashline maintained an average frame time of approximately **16.67 ms**, consistent with the Balanced-mode 60 FPS target.
+
+The selected near-end 99th-percentile frame time was **17.08 ms**, compared with **16.90 ms** before the soak, an increase of **0.18 ms**.
+
+The supplied Adaptive Performance thermal events reported `NoWarning`, with normalized thermal levels between **0.35 and 0.38**. No thermal throttling was observed in those entries.
+
+The battery temperature decreased from **25.9°C to 23.4°C**. This unexpected decrease is recorded as measured and should not be interpreted as proof that the device cooled under sustained load.
+
+**Measurement note:** Frame-time values were obtained from the game's `[Baseline]` logcat output. The selected after value is a near-end interval measurement, not a separately calculated percentile across the entire 60-second after-Profiler capture.
+
+### Evidence
+
+- [Before Profiler capture](thermal-soak/before.data)
+- [After Profiler capture](thermal-soak/after.data)
+- [Thermal soak logcat](thermal-soak/logcat-soak.txt)
+- [Minute 0 screenshot](thermal-soak/minute-00.png)
+- [Minute 5 screenshot](thermal-soak/minute-05.png)
+- [Minute 10 screenshot](thermal-soak/minute-10.png)
