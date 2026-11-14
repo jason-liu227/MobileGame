@@ -200,3 +200,57 @@ Telemetry is recorded in Android logcat and stored locally in `telemetry.log`.
 Completed a reflection covering the game's earn–spend–upgrade economy, proposed free-to-play monetisation model, and five dark-pattern risks with ethical guardrails.
 
 The current game uses a simulated purchase provider, with no real-money IAP SDK implemented.
+
+## Week 7 — Adaptive Performance and Thermal Soak Testing
+
+### Lab A — Adaptive Performance and Frame-Rate Toggle
+
+This week, I integrated Unity's Adaptive Performance package and Android Provider into Dashline. I created an `AdaptiveBootstrap` script to monitor thermal warnings and performance bottlenecks through Android logcat.
+
+I also implemented two selectable performance modes:
+
+- **Balanced:** 60 FPS target with URP render scale 1.0.
+- **High FPS:** 120 FPS target with URP render scale 0.8.
+
+I added a High FPS toggle to the game's settings menu and confirmed that switching modes updated the frame-rate target and render scale. Android logcat showed the mode changes and Adaptive Performance bottleneck events.
+
+I also added an in-game FPS overlay to monitor frame time and performance during gameplay.
+
+### Lab B — 10-Minute Thermal Soak
+
+I created a thermal overlay displaying frame time, thermal warning level, normalized temperature level and temperature trend.
+
+I then ran a 10-minute thermal soak on my Samsung phone in Balanced mode, capturing screenshots at minutes 0, 5 and 10.
+
+| Measurement | Result |
+|---|---|
+| Starting battery temperature | 25.9°C |
+| Ending battery temperature | 23.4°C |
+| Temperature change | −2.5°C |
+| Thermal level at 0 / 5 / 10 minutes | 0.38 / 0.36 / 0.35 |
+| Thermal warnings | `NoWarning` at all three checkpoints |
+| Average frame time before / after | 16.67 / 16.67 ms |
+| Selected p99 before / near end | 16.90 / 17.08 ms |
+
+The results showed that Dashline maintained approximately 60 FPS during the test. No thermal throttling was observed in the recorded thermal events. The battery temperature decreased during the test, which was unexpected, so I recorded the measured values without assuming a cause.
+
+### Sustained Performance Budget
+
+My Samsung sustained Dashline's **60 FPS Balanced-mode target**, equivalent to approximately **16.67 ms per frame**, throughout the 10-minute thermal soak, without observed thermal throttling.
+
+### Reading Week Improvement
+
+Based on these results, I will focus on reducing occasional frame-time spikes and improving the HUD layout, particularly the overlapping pause button, performance information and upgrade controls, while maintaining the 60 FPS target.
+
+### Reflection
+
+Lab A demonstrated how frame-rate targets and rendering quality can be adjusted for different devices. Lab B showed why sustained testing is important: a game must maintain consistent performance over time, not just immediately after launch.
+
+The thermal overlay, logcat recordings and Profiler captures provided evidence of how Dashline performed on a real Android device.
+
+### Reading Week and CA2 Reminders
+
+- Reading Week: 26–30 October 2026.
+- Async Pack 1 — Monetisation Models & Ethics: due 1 November 2026.
+- Week 8 Lab A — Peer distribution and release build: 2 November 2026.
+- CA2 Playable Vertical Slice: due 15 November 2026 at 23:59.
