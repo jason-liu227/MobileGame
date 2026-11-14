@@ -296,6 +296,8 @@ GameObject:
   - component: {fileID: 597306146}
   - component: {fileID: 597306147}
   - component: {fileID: 597306148}
+  - component: {fileID: 597306149}
+  - component: {fileID: 597306150}
   m_Layer: 0
   m_Name: App
   m_TagString: Untagged
@@ -369,6 +371,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5096f9e47c3f2d64cae1ed074d8c7c87, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WalletPersistence
+--- !u!114 &597306149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597306143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 274f09073f834ec458d5270e68d9c13e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AdaptiveBootstrap
+--- !u!114 &597306150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 597306143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f95b4dbd47a446c4da3d7f4e16428beb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PerformanceMode
 --- !u!1 &600801470
 GameObject:
   m_ObjectHideFlags: 0
