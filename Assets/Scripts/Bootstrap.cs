@@ -8,10 +8,17 @@ public class Bootstrap : MonoBehaviour
 
         DontDestroyOnLoad(gameObject);
 
+        // Get the first 8 characters of the build GUID.
+        string guid = Application.buildGUID;
+        string buildId = guid.Length >= 8
+            ? guid.Substring(0, 8)
+            : guid;
+
         Telemetry.Log(
             "session_start",
-            ("app_version", Application.version),
-            ("device_model", SystemInfo.deviceModel),
+            ("version", Application.version),
+            ("build", buildId),
+            ("device", SystemInfo.deviceModel),
             ("android", SystemInfo.operatingSystem)
         );
     }
@@ -24,5 +31,6 @@ public class Bootstrap : MonoBehaviour
         );
     }
 }
+
 
 
