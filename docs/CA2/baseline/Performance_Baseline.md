@@ -106,3 +106,68 @@ The battery temperature decreased from **25.9°C to 23.4°C**. This unexpected d
 | Total RSS memory | 407,392 KB (397.8 MiB) | `adb shell dumpsys meminfo` |
 
 **Observations:** Android reported a successful cold launch and a HOT resume. Total PSS was approximately 337.7 MiB during the memory test. No conclusion about memory leaks can be drawn from this single measurement.
+
+## Week 9 Lab A — Asset Memory Measurements
+
+**Project:** Endless Runner — Dashline  
+**Device:** Samsung Galaxy S25 FE  
+**Platform:** Android
+
+| Category | Budget | Measured | Inside budget? | Notes |
+|---|---:|---:|---|---|
+| Textures (Texture2D) | 32 MB | 5.1 MB | Yes | Filtered **Allocated Memory in Table** from the `texture2d` search; includes graphics-estimated, native, and small managed entries. Not a deduplicated texture footprint. |
+| Audio (AudioClip) | 8 MB | 34.5 KB (approximately 0.0345 MB) | Yes | Filtered `audioclip` result from the Memory Profiler snapshot. |
+| Managed memory | 32 MB | 3.2 MB | Yes | Managed memory reported from the snapshot. |
+| Total PSS | 400 MiB | 388.6 MiB | Yes | Week 9 Android retest with the Unity Profiler disconnected. Approximately 11.4 MiB of headroom. |
+
+**Memory budget definition:** These are provisional project-defined Week 9 budgets because no explicit peak-memory budget was identified in the available Week 3 documentation.
+
+**Total PSS verification:**
+
+- Week 8 baseline: 337.7 MiB.
+- Week 9 initial measurement: 469.9 MiB (`TOTAL PSS: 481197 KB`).
+- Week 9 retest with Profiler disconnected: 388.6 MiB (`TOTAL PSS: 397908 KB`).
+- The non-profiled retest is within the 400 MiB budget.
+- The difference between measurements may reflect profiling overhead or differences in runtime conditions; it does not establish a memory leak.
+
+### Additional Week 9 measurements
+
+| Metric | Result |
+|---|---|
+| Mean frame time | 16.68 ms |
+| Highest reported window p99 | 16.88 ms |
+| Measurement duration | Approximately 3 minutes 30 seconds |
+| Reporting windows | 22 |
+| Batches | 365–387 |
+| SetPass calls | 6 |
+| Draw calls | Not independently confirmed |
+| Week 3 SetPass calls | 5 |
+| Week 7 mean frame time | 16.67 ms |
+| Week 7 p99 frame time | 16.90 ms before thermal soak; 17.08 ms near end |
+
+**Observation:** Week 9 frame times remained close to the 60 FPS target. SetPass calls increased from 5 in the Week 3 selected capture to 6 in Week 9. The captures may differ in scene content and profiling conditions, so this does not establish a rendering regression.
+
+The Week 9 p99 value is the highest reported percentile from individual logging windows, not a percentile recalculated across the entire recording.
+
+### Device-tier verification
+
+- **Auto selection:** `tier=Mid` appeared in Android logcat on two launches (15 November 2026, 16:23:07 and 16:23:44).
+- **Manual Low override on Android:** Not independently confirmed in the provided logcat output.
+
+### Art pass
+
+- **Style:** Minimalist geometric 2D greybox art pass.
+- **Palette:** Player `#21C7C7`; obstacles `#FF5C5C`; floor/ceiling `#455A75`;.
+- **Sprite atlases:** Not yet required for the existing greybox shapes; revisit when imported sprites are added.
+
+### Week 9 Lab A — Android Frame-Time Results
+
+- **Device:** Samsung Galaxy S25 FE
+- **Automatically selected tier:** Mid
+- **Target frame rate:** 60 FPS
+- **Measurement:** Unity Baseline logger
+- **Duration:** Approximately 3 minutes 30 seconds
+- **Reporting windows:** 22
+- **Mean of reported average frame times:** 16.68 ms
+- **Highest reported window p99:** 16.88 ms
+- **Frame-time stability:** Close to 60 FPS target
