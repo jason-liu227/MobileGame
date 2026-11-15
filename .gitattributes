@@ -1,1 +1,2 @@
 docs/CA2/baseline/thermal-soak/*.data filter=lfs diff=lfs merge=lfs -text
+docs/CA3/qa/logcat-w08-testplan.txt filter=lfs diff=lfs merge=lfs -text
