@@ -338,3 +338,93 @@ The logcat exceeds GitHub's standard 100 MB file limit; Git LFS is suitable for 
 **6 / 6 scenarios passed; 0 failed; 0 pending.** No issues or fixes were recorded for this test run.
 
 This lab helped me check how Dashline behaves under common Android interruptions and device conditions, rather than relying only on normal gameplay tests. Pairing manual observations with logcat entries made the results easier to verify and document. The next improvement is to keep evidence captures concise while retaining the full original log when needed.
+
+## Week 9 — Lab A: Android Quality Tiers and Asset Budgets
+
+**Date:** 15/11/2026  
+**Project:** Endless Runner — Dashline  
+**Device:** Samsung Galaxy S25 FE (Android 16)  
+**Unity:** 6.6
+
+### Work Completed
+
+- Created three Android quality tiers: Low, Mid and High.
+- Configured separate URP quality settings for render scale, MSAA, shadows, mipmaps, texture filtering and post-processing.
+- Created `DeviceTier.cs` to automatically select a quality tier using device RAM and processor-core count.
+- Added a TextMeshPro dropdown with Auto, Low, Mid and High options.
+- Used `PlayerPrefs` to save the selected override and restore the dropdown selection when the game restarts.
+- Applied a minimalist geometric colour palette to the player, obstacles, floor, ceiling and background.
+- Captured Android Memory Profiler measurements for textures, audio and managed memory.
+- Recorded Android frame-time and rendering measurements.
+- Established provisional memory budgets and checked the results against them.
+
+### Quality Tier Configuration
+
+| Setting | Low | Mid | High |
+|---|---|---|---|
+| URP render scale | 0.75 | 0.9 | 1.0 |
+| MSAA | Disabled | 2× | 4× |
+| Shadows | Off | On, 20 m / 1024 | On, 40 m / 2048 |
+| Mipmap limit | 1 | 0 | 0 |
+| Mipmap streaming | On | On | On |
+| Anisotropic filtering | Off | Per Texture | Forced On |
+| Post-processing | Off | Bloom only | On |
+| Target frame rate | 30 FPS | 60 FPS | 60 FPS |
+
+Android logcat confirmed that automatic device-tier selection chose `tier=Mid` on two launches. The settings dropdown was configured to save and restore manual selections. A forced Low-tier launch was not independently confirmed in the supplied Android logcat evidence.
+
+### Art Pass
+
+I applied a minimalist geometric colour scheme to the existing 2D lane:
+
+| Element | Colour |
+|---|---|
+| Player | Cyan `#21C7C7` |
+| Obstacles | Coral `#FF5C5C` |
+| Floor and ceiling | Slate blue `#455A75` |
+
+The lane continues to use simple Sprite Renderer shapes. No imported sprite atlas was created during this pass.
+
+### Memory Budgets and Results
+
+| Category | Provisional budget | Measured | Result |
+|---|---:|---:|---|
+| Textures (Texture2D) | 32 MB | 5.1 MB | Within budget |
+| Audio (AudioClip) | 8 MB | 34.5 KB | Within budget |
+| Managed memory | 32 MB | 3.2 MB | Within budget |
+| Android Total PSS | 400 MiB | 388.6 MiB | Within budget |
+
+The budgets were established as provisional Week 9 project targets because no explicit peak-memory budget was identified in the available Week 3 documentation.
+
+The first Android PSS measurement was approximately 469.9 MiB. After disconnecting the Unity Profiler and relaunching the game, the retest reported 388.6 MiB, approximately 11.4 MiB below the 400 MiB budget.
+
+The difference between the two readings may reflect profiling overhead or different runtime conditions. It does not establish a memory leak.
+
+### Android Performance Results
+
+| Metric | Week 9 result |
+|---|---|
+| Automatically selected tier | Mid |
+| Target frame rate | 60 FPS |
+| Mean frame time | 16.68 ms |
+| Highest reported window p99 | 16.88 ms |
+| Measurement duration | Approximately 3 minutes 30 seconds |
+| Reporting windows | 22 |
+| Batches in selected frames | 365–387 |
+| SetPass calls | 6 |
+| Triangles in selected frames | 707–735 |
+| Separate draw-call count | Not independently confirmed |
+
+The frame-time measurements remained close to the 60 FPS target. Week 7 Balanced mode had a mean frame time of approximately 16.67 ms, so the Week 9 mean was similar.
+
+Week 3's bottleneck investigation recorded 5 SetPass calls, compared with 6 in the selected Week 9 captures. Because the captures may differ in scene content and profiling conditions, this does not establish a rendering regression.
+
+The 16.88 ms p99 result is the highest reported percentile from individual logging windows, not a percentile calculated across the complete recording.
+
+### Reflection
+
+This lab helped me understand how to configure rendering quality for Android devices with different hardware capabilities. The automatic device-tier system provides a starting quality level, while the settings dropdown allows the player to choose an override.
+
+The memory measurements showed that textures, audio and managed memory were below the provisional category budgets. The non-profiled Android PSS retest also met the total-memory target, although the remaining headroom was relatively small.
+
+Dashline maintained frame times close to the 60 FPS target on the Mid tier. The next priorities are verifying the manual Low-tier override on Android, confirming any remaining art and import-setting requirements, and completing the final CA2 evidence and commit checks.
