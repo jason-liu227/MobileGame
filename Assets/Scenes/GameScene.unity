@@ -3125,7 +3125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPool
   coinPrefab: {fileID: 3027630387424363713, guid: 55de3ae891ace94469673dd31b0460a6, type: 3}
-  poolSize: 100
+  poolSize: 300
 --- !u!1 &1041607390
 GameObject:
   m_ObjectHideFlags: 0
