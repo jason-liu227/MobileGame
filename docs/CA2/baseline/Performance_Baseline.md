@@ -88,3 +88,21 @@ The battery temperature decreased from **25.9°C to 23.4°C**. This unexpected d
 - [Minute 0 screenshot](thermal-soak/minute-00.png)
 - [Minute 5 screenshot](thermal-soak/minute-05.png)
 - [Minute 10 screenshot](thermal-soak/minute-10.png)
+
+
+## Week 8 Lab B — Android Startup and Memory
+
+**Date:** 15 November 2026  
+**Game:** Dashline  
+**Package:** `com.jason.mobilegame`  
+**Version:** 0.8.0  
+**Build ID:** cb6ecb43
+
+| Metric | Result | Method |
+|---|---|---|
+| Cold-start time | 374 ms | `adb shell am force-stop`, then `am start -W` |
+| Home-and-return time (HOT) | 45 ms | Home for 10 seconds, then `am start -W` |
+| Total PSS memory | 345,835 KB (337.7 MiB) | `adb shell dumpsys meminfo` during gameplay |
+| Total RSS memory | 407,392 KB (397.8 MiB) | `adb shell dumpsys meminfo` |
+
+**Observations:** Android reported a successful cold launch and a HOT resume. Total PSS was approximately 337.7 MiB during the memory test. No conclusion about memory leaks can be drawn from this single measurement.

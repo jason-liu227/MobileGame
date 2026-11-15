@@ -254,3 +254,87 @@ The thermal overlay, logcat recordings and Profiler captures provided evidence o
 - Async Pack 1 — Monetisation Models & Ethics: due 1 November 2026.
 - Week 8 Lab A — Peer distribution and release build: 2 November 2026.
 - CA2 Playable Vertical Slice: due 15 November 2026 at 23:59.
+
+## Week 8 — Lab A: Android Build and Performance Baseline
+
+**Date:** 15/11/2026  
+**Project:** Endless Runner — Dashline  
+**Game version:** 0.8.0  
+**Build ID:** `cb6ecb43`  
+**Device:** Samsung Galaxy S25 FE (Android 16)  
+**Unity:** 6.6  
+**Package:** `com.jason.mobilegame`
+
+### Work Completed
+
+- Prepared and tested the Android build of Dashline on a physical Samsung Galaxy S25 FE.
+- Updated the Week 8 performance baseline documentation in `docs/CA2/baseline/Performance_Baseline.md` and `docs/CA2/baseline/baseline-sheet.md`.
+- Collected Android memory measurements and startup timing samples using ADB.
+- Retained the 60 FPS Balanced-mode target from the earlier performance work.
+
+### Measurements
+
+| Metric | Week 8 result |
+|---|---|
+| Android TOTAL PSS | 345,835 KB (approximately 337.7 MiB) |
+| Android RSS | 407,392 KB (approximately 397.8 MiB) |
+| Cold launch (`LaunchState: COLD`) | 374 ms — one recorded sample |
+| Home-and-return (`LaunchState: HOT`) | 45 ms — one recorded sample |
+| Warm launch | Not measured |
+
+The cold and HOT launch measurements are individual ADB samples, not medians. FPS, GC allocation, geometry, APK size, thermal behaviour, and time to interactive were not remeasured as part of these Week 8 figures. Peer-distribution outcomes have not been confirmed in these notes.
+
+### Reflection
+
+Testing the build on a physical Android device provided concrete startup and memory measurements. The results give me an updated baseline for Dashline, while the missing metrics identify what should be captured in a future performance comparison.
+
+## Week 8 — Lab B: Android Resilience Testing
+
+**Date:** 15/11/2026  
+**Project:** Endless Runner — Dashline  
+**Build ID:** `cb6ecb43`  
+**Device:** Samsung Galaxy S25 FE (Android 16)
+
+### Work Completed
+
+- Created `docs/CA3/qa/test-plan.md` for six Android resilience scenarios.
+- Tested background/resume, Airplane Mode, rotation/orientation, Battery Saver, low-memory handling, and cold-start/Home-and-return behaviour.
+- Recorded Android logcat evidence in `docs/CA3/qa/logcat-w08-testplan.txt`.
+- Checked the log for selected crash and error signatures.
+
+### Resilience Test Results
+
+| # | Scenario | Result | Logcat evidence (original line number) |
+|---|---|---|---|
+| 1 | Resume / Background | PASS | L13696 (foreground), L22182 (background) |
+| 2 | No Network / Airplane Mode | PASS | L201614 (Airplane Mode enabled; cellular data not registered) |
+| 3 | Rotation / Orientation | PASS | L13736 (fixed rotation applied to Dashline) |
+| 4 | Battery Saver | PASS | L275316 (Battery Saver enabled) |
+| 5 | Low RAM | PASS | L37442 (Unity handled `APP_CMD_LOW_MEMORY`) |
+| 6 | Cold Start / Home / Return | PASS | L337707 (existing activity returned to foreground) |
+
+### Test Observations
+
+**Resume / Background:** Completed 10 out of 10 Home-and-return cycles without a freeze or black screen. Audio paused correctly, and saved progress survived a force-stop and relaunch.
+
+**No Network:** Enabled Airplane Mode before launch and during gameplay. Dashline remained playable without a hang. The logcat confirms Airplane Mode and lack of cellular registration; it does not independently prove Wi-Fi was disabled.
+
+**Rotation:** Verified that the game maintained the intended landscape orientation and the UI remained usable within the safe area. Android logged the rotation and display configuration.
+
+**Battery Saver:** Played for two minutes with Battery Saver enabled. Gameplay and UI remained usable. The test plan records 60 FPS / Balanced mode, but no separate frame-time distribution was captured here.
+
+**Low RAM:** Ran `adb shell am send-trim-memory com.jason.mobilegame RUNNING_CRITICAL`, backgrounded the game, opened Camera and Chrome, and returned. Dashline recovered without a black screen or crash. Unity logged low-memory handling, although the individual log entry cannot be conclusively attributed to the exact trim command.
+
+**Cold Start / Home / Return:** Recorded a cold-launch sample of 374 ms and a HOT-return sample of 45 ms. Android also logged the activity being displayed and subsequently returned to the foreground. The activity-display log timing is distinct from the ADB launch measurements.
+
+### Logcat Review
+
+The full recording was 115,526,366 bytes (approximately 110.2 MiB). Searches for `ANR in com.jason.mobilegame`, `NullReferenceException`, `FATAL EXCEPTION`, `Fatal signal`, and `com.jason.mobilegame.*has died` returned no matches. No crashes, freezes, or ANRs were observed during the six manual tests. This finding is limited to the searched patterns and observed test period.
+
+The logcat exceeds GitHub's standard 100 MB file limit; Git LFS is suitable for storing the complete file while preserving original evidence line numbers.
+
+### Final Result and Reflection
+
+**6 / 6 scenarios passed; 0 failed; 0 pending.** No issues or fixes were recorded for this test run.
+
+This lab helped me check how Dashline behaves under common Android interruptions and device conditions, rather than relying only on normal gameplay tests. Pairing manual observations with logcat entries made the results easier to verify and document. The next improvement is to keep evidence captures concise while retaining the full original log when needed.
