@@ -1,7 +1,6 @@
 # Economy Telemetry Event Map
 
-**Project:** Gravity-Reversal Endless Runner  
-**Module:** Mobile Game Development (A12581)  
+**Project:** Gravity-Reversal Endless Runner   
 **Milestone:** Week 6 Lab B — Economy Telemetry
 
 | Event | Parameters (type) | Fires when | Question it answers |

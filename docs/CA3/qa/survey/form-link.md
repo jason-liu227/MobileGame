@@ -22,7 +22,7 @@
 - Anonymous responses: Verified
 - Respondent names collected: No
 - Respondent email addresses collected: No
-- Microsoft Forms setting: Anyone can respond (if available)
+- Microsoft Forms setting: Anyone can respond
 - Consent question: Included and required
 - Purpose: University game development testing and quality improvement
 

@@ -11,8 +11,8 @@
 
 | Phone | SoC | RAM | Android | Panel Hz | Tier (Low/Mid/High) | Owner (initials) | Builds tested |
 |---|---|---|---|---|---|---|---|
-| My phone | Exynos 2400 | 7204 MB | Android OS 16 API-36 | 60/120 Hz | High | JL | 0.8.0 |
-| Peer 1 | TBD | TBD | TBD | TBD | TBD | TBD | 0.8.0 |
+| My phone | Exynos 2400 | 16 GB | Android OS 16 API-36 | 60/120 Hz | High | JL | 0.8.0 |
+| Samsung Galaxy S20 5G | Exynos 990 | 12 GB | Android 13 | 60/120 Hz | High | ML | 0.8.0 |
 | Peer 2 | TBD | TBD | TBD | TBD | TBD | TBD | 0.8.0 |
 
 ## Notes
