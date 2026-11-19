@@ -11,14 +11,3 @@
 - [ ] **Store descriptions:** short description ≤ 80 characters and long description ≤ 4,000 characters; lead with the player benefit and avoid jargon.
 - [ ] **Competitor scan:** 2–3 games in the genre, comparing their store-listing presentation with what Dashline should match or improve.
 
-## Deliverable
-
-- [ ] Combine the four artefacts into a five-minute mini-deck at `docs/CA3/store/pack2-store-presence.pdf`.
-- [ ] Include a privacy statement accurately describing local saves and telemetry (no third-party analytics in the documented implementation).
-- [ ] Review during the Week 10 Lab B critique, if still possible.
-
-## Related work
-
-- [ ] Continue Async Pack 3 peer survey and re-share the QR code with the Sunday build; survey runs until Sun 29 Nov 2026.
-- [ ] Save any peer feedback and evidence used to refine CA3 targets.
-
